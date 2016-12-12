@@ -10,9 +10,44 @@ Target Server Type    : MYSQL
 Target Server Version : 50626
 File Encoding         : 65001
 
-Date: 2016-11-08 20:46:55
+Date: 2016-11-19 15:57:58
 */
 
+
+
+-- ----------------------------
+-- Procedure structure for `proc_clearGoodsUseRelate`
+-- ----------------------------
+DROP PROCEDURE IF EXISTS `proc_clearGoodsUseRelate`;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `proc_clearGoodsUseRelate`()
+BEGIN
+	/* 定义变量 */
+	DECLARE l_id VARCHAR(32);
+	DECLARE l_lifecycle INT;
+	DECLARE l_createTime INT;
+	DECLARE _end INT DEFAULT 0;
+		
+	/* 定义光标 */
+	DECLARE _Cur CURSOR FOR 
+		SELECT id, lifecycle, create_time FROM goods_use_relat 
+			WHERE UNIX_TIMESTAMP(SYSDATE()) - create_time > lifecycle*24*3600;
+		
+	DECLARE CONTINUE HANDLER FOR NOT FOUND set _end = 1;
+
+	/* 打开光标 */	
+	OPEN _Cur;
+		/* 循环执行 */
+		REPEAT
+			FETCH _Cur INTO l_id, l_lifecycle, l_createTime;
+				/* 删除超时的商品 */
+				DELETE FROM goods_use_relat WHERE id= l_id;
+		UNTIL _end END REPEAT;
+	CLOSE _Cur;
+
+END
+;;
+DELIMITER ;
 
 -- ----------------------------
 -- Procedure structure for `proc_parkGrowth`
@@ -70,13 +105,20 @@ END
 ;;
 DELIMITER ;
 
+-- ----------------------------
+-- Event structure for `event_clearGoodsUseRelate`
+-- ----------------------------
+DROP EVENT IF EXISTS `event_clearGoodsUseRelate`;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` EVENT `event_clearGoodsUseRelate` ON SCHEDULE EVERY 12 HOUR STARTS '2017-11-19 00:00:00' ON COMPLETION NOT PRESERVE ENABLE DO CALL proc_clearGoodsUseRelate
+;;
+DELIMITER ;
 
 -- ----------------------------
--- Event structure for `parkGrowth`
--- 2016-11-08 21:17:00 时间改为 真实发布时间
+-- Event structure for `event_parkGrowth`
 -- ----------------------------
-DROP EVENT IF EXISTS `parkGrowth`;
+DROP EVENT IF EXISTS `event_parkGrowth`;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` EVENT `parkGrowth` ON SCHEDULE AT '2016-11-08 21:17:00' ON COMPLETION NOT PRESERVE ENABLE DO CALL proc_parkGrowth
+CREATE DEFINER=`root`@`localhost` EVENT `event_parkGrowth` ON SCHEDULE AT '2016-11-08 21:17:00' ON COMPLETION NOT PRESERVE ENABLE DO CALL proc_parkGrowth
 ;;
 DELIMITER ;

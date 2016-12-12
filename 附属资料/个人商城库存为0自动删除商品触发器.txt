@@ -1,0 +1,7 @@
+DROP TRIGGER IF EXISTS `mall_by_person_clean`;
+DELIMITER ;;
+CREATE TRIGGER `mall_by_person_clean` AFTER INSERT ON `backpack` FOR EACH ROW BEGIN
+     delete from goods_personage where repertory <= 1;
+END
+;;
+DELIMITER ;

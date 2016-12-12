@@ -56,11 +56,11 @@
                     <customproperty taskproperty-id="tpc1" value=""/>
                 </task>
             </task>
-            <task id="2" name="编码" meeting="false" start="2016-06-30" duration="82" complete="96" expand="true">
+            <task id="2" name="编码" meeting="false" start="2016-06-30" duration="82" complete="97" expand="true">
                 <task id="24" name="U3D" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true">
                     <customproperty taskproperty-id="tpc0" value=""/>
                 </task>
-                <task id="25" name="JAVA" meeting="false" start="2016-06-30" duration="82" complete="96" expand="true">
+                <task id="25" name="JAVA" meeting="false" start="2016-06-30" duration="82" complete="97" expand="true">
                     <task id="30" name="接口功能" meeting="false" start="2016-06-30" duration="82" complete="98" expand="true">
                         <task id="162" name="会员" meeting="false" start="2016-06-30" duration="47" complete="99" expand="true">
                             <task id="55" name="会员账号注册" color="#8cb6ce" meeting="false" start="2016-08-11" duration="5" complete="100" expand="true">
@@ -78,7 +78,7 @@
                                 <task id="164" name="查询钱包信息" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
                                 <task id="165" name="现金充值" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
                             </task>
-                            <task id="166" name="我的订单" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true">
+                            <task id="166" name="我的订单" meeting="false" start="2016-06-30" duration="1" complete="100" expand="false">
                                 <task id="167" name="分页列表查询" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
                                 <task id="168" name="列表快捷筛选" color="#8cb6ce" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true">
                                     <customproperty taskproperty-id="tpc1" value="不做"/>
@@ -140,7 +140,7 @@
                                 <task id="200" name="分页查询已授权列表" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
                                 <task id="201" name="权限回收" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
                             </task>
-                            <task id="202" name="公告管理" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true">
+                            <task id="202" name="公告管理" meeting="false" start="2016-06-30" duration="1" complete="100" expand="false">
                                 <task id="203" name="分页内容查询" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
                                 <task id="204" name="增加公告信息" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
                                 <task id="205" name="修改编辑公告" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
@@ -293,7 +293,7 @@
                             <task id="339" name="购物车转订单" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
                         </task>
                     </task>
-                    <task id="26" name="后台功能" meeting="false" start="2016-06-30" duration="59" complete="95" expand="false">
+                    <task id="26" name="后台功能" meeting="false" start="2016-06-30" duration="59" complete="97" expand="true">
                         <task id="42" name="维护U3D登录用户session" color="#8cb6ce" meeting="false" start="2016-07-08" duration="4" complete="100" expand="true"/>
                         <task id="43" name="IM" color="#8cb6ce" meeting="false" start="2016-07-11" duration="6" complete="100" expand="true"/>
                         <task id="44" name="多人在线用户分管" color="#8cb6ce" meeting="false" start="2016-07-18" duration="3" complete="100" expand="true">
@@ -338,7 +338,7 @@
                                 <task id="105" name="内容详情" meeting="false" start="2016-08-01" duration="2" complete="100" expand="true"/>
                             </task>
                         </task>
-                        <task id="65" name="数据管理" meeting="false" start="2016-06-30" duration="59" complete="93" expand="true">
+                        <task id="65" name="数据管理" meeting="false" start="2016-06-30" duration="59" complete="96" expand="true">
                             <task id="131" name="模型及商品分类管理" meeting="false" start="2016-08-03" duration="2" complete="100" expand="false">
                                 <customproperty taskproperty-id="tpc0" value="孙杰翔"/>
                                 <task id="132" name="增加分类" meeting="false" start="2016-08-03" duration="2" complete="100" expand="true"/>
@@ -376,25 +376,25 @@
                                 <task id="107" name="分页列表查询陵园墓园纪念人" color="#8cb6ce" meeting="false" start="2016-08-27" duration="1" complete="100" expand="true"/>
                                 <task id="108" name="陵园墓园纪念人详情" color="#8cb6ce" meeting="false" start="2016-08-27" duration="1" complete="100" expand="true"/>
                             </task>
-                            <task id="130" name="商城管理" meeting="false" start="2016-06-30" duration="1" complete="0" expand="false">
-                                <task id="136" name="商品管理" meeting="false" start="2016-06-30" duration="1" complete="0" expand="true">
-                                    <task id="137" name="分页列表查找" meeting="false" start="2016-06-30" duration="1" complete="0" expand="false">
-                                        <task id="150" name="快捷筛选" meeting="false" start="2016-06-30" duration="1" complete="0" expand="true"/>
+                            <task id="130" name="商城管理" meeting="false" start="2016-06-30" duration="1" complete="50" expand="true">
+                                <task id="136" name="商品管理" meeting="false" start="2016-06-30" duration="1" complete="100" expand="false">
+                                    <task id="137" name="分页列表查找" meeting="false" start="2016-06-30" duration="1" complete="100" expand="false">
+                                        <task id="150" name="快捷筛选" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
                                     </task>
-                                    <task id="139" name="内容详情" meeting="false" start="2016-06-30" duration="1" complete="0" expand="true"/>
-                                    <task id="140" name="增加商品" meeting="false" start="2016-06-30" duration="1" complete="0" expand="false">
-                                        <task id="141" name="绑定模型" meeting="false" start="2016-06-30" duration="1" complete="0" expand="true"/>
-                                        <task id="142" name="绑定商品分类" meeting="false" start="2016-06-30" duration="1" complete="0" expand="true"/>
+                                    <task id="139" name="内容详情" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
+                                    <task id="140" name="增加商品" meeting="false" start="2016-06-30" duration="1" complete="100" expand="false">
+                                        <task id="141" name="绑定模型" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
+                                        <task id="142" name="绑定商品分类" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
                                     </task>
-                                    <task id="143" name="修改商品" meeting="false" start="2016-06-30" duration="1" complete="0" expand="false">
-                                        <task id="144" name="编辑模型" meeting="false" start="2016-06-30" duration="1" complete="0" expand="true"/>
-                                        <task id="145" name="编辑分类" meeting="false" start="2016-06-30" duration="1" complete="0" expand="true"/>
+                                    <task id="143" name="修改商品" meeting="false" start="2016-06-30" duration="1" complete="100" expand="false">
+                                        <task id="144" name="编辑模型" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
+                                        <task id="145" name="编辑分类" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
                                     </task>
-                                    <task id="146" name="删除商品" meeting="false" start="2016-06-30" duration="1" complete="0" expand="false">
-                                        <task id="147" name="删除模型、分类关系" meeting="false" start="2016-06-30" duration="1" complete="0" expand="true"/>
+                                    <task id="146" name="删除商品" meeting="false" start="2016-06-30" duration="1" complete="100" expand="false">
+                                        <task id="147" name="删除模型、分类关系" meeting="false" start="2016-06-30" duration="1" complete="100" expand="true"/>
                                     </task>
                                 </task>
-                                <task id="148" name="订单管理" meeting="false" start="2016-06-30" duration="1" complete="0" expand="false">
+                                <task id="148" name="订单管理" meeting="false" start="2016-06-30" duration="1" complete="0" expand="true">
                                     <task id="149" name="分页列表查找" meeting="false" start="2016-06-30" duration="1" complete="0" expand="true">
                                         <task id="151" name="快捷筛选" meeting="false" start="2016-06-30" duration="1" complete="0" expand="true"/>
                                     </task>
